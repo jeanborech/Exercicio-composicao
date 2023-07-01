@@ -7,7 +7,6 @@ public class ContratoHoras {
 	private Date date;
 	private Double valorproHora;
 	private Integer horas;
-	
 	public ContratoHoras() {
 	}
 	
@@ -35,6 +34,8 @@ public class ContratoHoras {
 		this.horas = horas;
 	}
 	
-	
+	public double valorTotal() {     //operação calcular valor total do contrato
+		return valorproHora * horas;
+	}
 
 }
